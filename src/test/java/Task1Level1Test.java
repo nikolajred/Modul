@@ -21,4 +21,12 @@ public class Task1Level1Test {
         int expected = 0;
         Assert.assertEquals(actual, expected);
     }
+    @Test
+    public void uniqNumberZero() {
+        Task1Level1 task1Level1 = new Task1Level1();
+        int[] array = {0, 0, 0};
+        int actual = task1Level1.UniqNumber(array);
+        int expected = 1;
+        Assert.assertEquals(actual, expected);
+    }
 }
